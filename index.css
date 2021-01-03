@@ -18,6 +18,7 @@ body {
     font-size: 16px;
     font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
     color: black;
+    overflow: scroll;
 }
 
 h1 {
@@ -103,7 +104,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     margin-top: -64px;
     position: relative;
 }
@@ -266,3 +267,62 @@ p {
     border-bottom: 0;
 }
 
+
+/* Responsive - Small Devices */
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        text-align: left;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .container-fluid div {
+        max-width: none;
+    }
+
+    #nav {
+        box-shadow: none;
+    }
+
+    .nav-wrap {
+        padding: 0;
+        margin-top: .5em;
+    }
+
+    .brand {
+        margin-left: 1em;
+    }
+
+    .navbar-toggler {
+        margin-right: 1em;
+    }
+
+    #navbarContentList {
+        z-index: 101;
+    }
+
+    .header {
+        background-position: 60% center;
+    }
+
+    .stats-bar {
+        margin-top: -36vh;
+    }
+
+    .stats-wrapper {
+        margin: 0 auto;
+        max-width: none;
+    }
+
+    .separator-element {
+        padding: 0 1em;
+        margin: auto;
+    }
+
+}

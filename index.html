@@ -50,8 +50,9 @@
     <header class="header">
         
         <div class="text">
-            <h1 class="d-xs-none d-sm-none d-md-block">It takes one button to help our planet.</h1>
-            <h5>Everything you do online has its own digital carbon footprint.</h5>
+            <h1 class="d-none d-md-block">It takes one button to help our planet.</h1>
+            <h5 class="d-none d-md-block">Everything you do online has its own digital carbon footprint.</h5>
+            <h4 class="d-md-none d-block">A button away from reducing your digital carbon footprint.</h4>
             <button class="btn button-primary button-body" onclick="location.href='#stats'">Get Started</button>
         </div>
         <a role="button" href="#stats"><i class="fas fa-arrow-down arrow"></i></a>
@@ -61,14 +62,17 @@
         <div class="container-fluid stats-bar">
             <div class="stats-wrapper">
                 <ul class="stats-list d-flex justify-content-around">
-                    <li><h2>1.1 M</h2><p>Pounds of coal burned  <br/>per year</p></li>
-                    <li class="separator-element"><h2>1.46 M</h2><p>kWh electricity <br/>per year</p></li>
-                    <li><h2>1034 K</h2><p>Kg of CO<sub>2</sub> emitted<br/><span style="font-size: 0.6em">or CO<sub>2</sub> Equivalent*</span></p></li>
+                    <li class="d-none d-md-block"><h2>1.1 M</h2><p>Pounds of coal burned  <br/>per year</p></li>
+                    <li class="d-md-none d-block col-sm-3"><h2>-1.1 M</h2><p>lbs of coal burned</p></li>
+                    <li class="separator-element d-none d-md-block"><h2>1.46 M</h2><p>kWh electricity <br/>per year</p></li>
+                    <li class="separator-element d-md-none d-block col-sm-3"><h2>-1.46 M</h2><p>kWh electricity</p></li>
+                    <li class="d-none d-md-block "><h2>1034 K</h2><p>Kg of CO<sub>2</sub> emitted<br/><span style="font-size: 0.6em">or CO<sub>2</sub> Equivalent*</span></p></li>
+                    <li class="d-md-none d-block col-sm-3"><h2>-1034 K</h2><p>Kg of CO<sub>2</sub></p></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div id="mission" class="container-fluid">
+    <div id="mission" class="container-fluid d-none d-md-block">
         <div class="body-container">
             <div class="body-section" style="padding-top: 8em;">
                 <h3>With our current email habits, <br/>
@@ -119,6 +123,5 @@
         </div>
     </footer>
 
-    
-
+    <script src="index.js"></script>
 </body>
