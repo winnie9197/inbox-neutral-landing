@@ -22,6 +22,16 @@ body {
 
 h1 {
     font-size: 3em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
 }
 
 h5 {
@@ -71,7 +81,6 @@ p {
 
     position: absolute;
     transform: translate(-50%, -90%);
-    /* min-width: 70vw; */
     top: 90%;
     left: 50%;
 }
@@ -94,7 +103,8 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
+    margin-top: -64px;
     position: relative;
 }
 
@@ -124,7 +134,7 @@ p {
 }
 
 .navbar {
-    background-color: var(--primary);
+    background-color: transparent;
     z-index: 100;
     position: relative;
     top: 0;
@@ -156,7 +166,7 @@ p {
 .separator-element {
     border-left: 2px solid var(--highlight);
     border-right: 2px solid var(--highlight);
-    padding: 0 4em;
+    padding: 0 5em;
     margin: auto -4em;
 }
 
@@ -255,3 +265,4 @@ p {
     margin-right: 0;
     border-bottom: 0;
 }
+
