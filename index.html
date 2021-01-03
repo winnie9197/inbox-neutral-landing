@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Reducing Your Digital Carbon Footprint</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700,200+NotoSansJP:700" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap Resources with jQuery -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="index.css">
+  <!-- Font Awesome Resources -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <!-- <div class="> -->
+    <nav class="navbar nav-wrap navbar-expand-md" id="banner">
+        <a class="navbar-brand" style="font-family: NotoSansJP, serif; font-size: 1.5em; color: var(--highlight);"><b>Inbox Neutral</b></a>
+            <!-- <img class="logo" src="images/logo.png"></a> -->
+        <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </a>
+        <div class="collapse navbar-collapse  justify-content-end" id="navbarContent">
+            <ul class="nav" id="navbarContentList">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mission">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reduce">Action</a>
+                </li>
+            </ul>
+            <button style="margin-left: 1em;"class="btn button-primary button-nav" onclick="location.href='#reduce'">Start</button>
+        </div>
+    </nav>
+    <header class="header">
+        
+        <div class="text">
+            <h1>It takes one button to help our planet.</h1>
+            <h5>Everything you do online has its own digital carbon footprint.</h5>
+            <button class="btn button-primary button-body" onclick="location.href='#reduce'">Get Started</button>
+        </div>
+    </header>
+    <div class="container-fluid stats-bar">
+        <div class="stats-wrapper">
+            <ul class="stats-list d-flex justify-content-around">
+                <li><h2>1.1 Million</h2><p>Pounds of coal burned  <br/>per year</p></li>
+                <li><h2>1.46 Million</h2><p>kWh electricity <br/>per year</p></li>
+                <li><h2>1.034 Million</h2><p>Kg of CO<sub>2</sub> emitted<br/><span style="font-size: 0.6em">or CO<sub>2</sub> Equivalent*</span></p></li>
+            </ul>
+        </div>
+    </div>
+    <div id="mission" class="container-fluid">
+        <div class="body-container">
+            <div class="body-section" style="padding-top: 8em;">
+                <h3>With our current email habits, <br/>
+                <span style="text-decoration: underline;">this is how much we can save</span> for our world <span style="text-decoration: underline;">each year</span>, <br/>
+                if each email user deletes <span style="text-decoration: underline; font-size: 1.25em; font-weight: 500;"">one email.</span></h3>
+
+                <button class="btn button-primary button-body" onclick="location.href='#reduce'">How you can help</button>
+            </div>
+
+            <div class="body-section d-flex justify-content-center" style="padding-top: 8em; padding-bottom: 8em;">
+                <!-- <img src="images/inbox-snapshot.png" class="col-md-4"> -->
+
+                <div class="inbox-snapshot d-flex flex-column image-shadow">
+                    <button class="btn compose-button disabled">COMPOSE</button>
+                    <ul class="inbox-email-categories">
+                        <li style="font-size: 1.25em;">Inbox (24,361)</li>
+                        <li style="font-weight: 500">Starred</li>
+                        <li style="font-weight: 500">Important</li>
+                        <li>Junk (2,803)</li>
+                        <li>Deleted (2,408)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 section-right"><h4 style="font-weight: normal; margin-bottom: 0;"><b>Each</b> of these emails costs our planet.</h4><p><br/>The good news is, <br/>here’s a simple way to help. </p>
+                    <button class="btn button-primary button-body" onclick="location.href='#reduce'">Delete Now</button>
+                    <p>What does your Inbox look like?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reduce" class="container-fluid d-flex justify-content-center">
+        <div class="reduce-container">
+            <h2>Reduce your Digital Carbon Footprint</h2>
+            <p style="font-weight: 300; font-size: 1.2em; margin: 1em 0;">A great start would be to remove any irrelevant emails <br/>in your account folders. Remember to clear the "Bin" and "Deleted" folders, <br/>so they get removed permanently. A little help goes a long way!</p>
+            <br/>
+            <p>Some other actionables include (in less than 2 minutes!):</p>
+            <ul>
+                <li>Unsubscribe to newsletters that are not relevant</li>
+                <li>Uncheck the email notification box on your calendar app</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="footer"></footer>
+
+    
+
+</body>

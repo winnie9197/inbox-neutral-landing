@@ -1,0 +1,229 @@
+:root {
+    --background: #FDF8F5;
+    --highlight: #FF4E4E;
+    --primary: #F7EDC6;
+    --primary-green: #164A41;
+    --shadow-green:#08342D;
+    --secondary-green: #8DA242;
+    --shadow: #c7c2c229;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background);
+    height: 100%;
+    font-size: 16px;
+    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+
+.button-primary {
+    background-color: var(--primary-green);
+    color: white;
+    
+    border-radius: 32px;
+}
+
+
+.button-primary:hover {
+    background-color: var(--shadow-green);
+}
+
+.button-nav {
+    padding: .25em 1.25em;
+}
+
+.button-body {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    padding: .5em 1.25em;
+}
+
+
+.container-fluid {
+    margin-top: 2em;
+}
+
+.container-fluid div {
+    max-width: 70vw;
+}
+
+.nav-wrap {
+    padding-left: 21vw;
+    padding-right: 21vw;
+}
+
+.screen-width {
+    max-width: 70vw;
+}
+
+/* Header */
+
+.header {
+    background-image: url("images/header-background.png");
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+.header .text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 70vw;
+}
+
+/* Nav */
+
+.logo {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    background-color: var(--primary);
+    z-index: 100;
+    position: relative;
+    top: 0;
+
+    box-shadow: 0 4px 4px var(--shadow);
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: var(--secondary-green);
+}
+
+/* Stats Section */
+
+.stats-bar {
+    background-color: var(--primary);
+    padding: 2em 0;
+}
+.stats-list{
+    list-style-type: none;
+    text-align: center;
+}
+
+/* .stats-list li {
+    font-weight: 400;
+    font-size: 1.3em;
+} */
+
+.stats-list li * {
+    align-items: stretch;
+    margin: 0;
+}
+
+.stats-wrapper {
+    margin: 0 auto; 
+    max-width: 70vw;
+}
+
+/* body content */
+.body-container {
+    text-align: center;
+    margin: 0 auto;
+
+    background-image: url("images/body-background.png");
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    padding: auto;
+}
+
+.body-section h3 {
+    line-height: 2;
+}
+
+.section-right {
+    padding: 3.5em 0;
+    margin: 0 auto;
+}
+
+.image-shadow {
+    box-shadow: 2px 2px 6px #00000029;
+    border-radius: 16px;
+}
+
+/* inbox snapshot component */
+.inbox-snapshot {
+    background-color: #ffffff78;
+    margin-top: .5em;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.inbox-email-categories {
+    list-style-type: none;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: .5em;
+}
+
+.compose-button {
+    background-color: #FF4E4E91;
+    padding: .5em 4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    color: white;
+    margin: 1.5em 2em 0 2em;
+
+    pointer-events: none;
+}
+
+/* Reduce Text container*/
+
+.reduce-container {
+    background-color: var(--primary-green);
+    border-radius: 16px;
+    padding: 2em 4em;
+    margin: 0 auto 12em auto;
+    max-width: 560px;
+    color: white;
+}
+
+.reduce-container h3 {
+    font-size: 2em;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary);
+    height: 4em;
+}
