@@ -25,7 +25,7 @@
     
     <!-- <div class="> -->
     <nav class="navbar nav-wrap navbar-expand-md" id="banner">
-        <a class="navbar-brand" style="font-family: NotoSansJP, serif; font-size: 1.5em; color: var(--highlight);"><b>Inbox Neutral</b></a>
+        <a class="navbar-brand brand"><b>Inbox Neutral</b></a>
             <!-- <img class="logo" src="images/logo.png"></a> -->
         <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -52,16 +52,20 @@
         <div class="text">
             <h1>It takes one button to help our planet.</h1>
             <h5>Everything you do online has its own digital carbon footprint.</h5>
-            <button class="btn button-primary button-body" onclick="location.href='#reduce'">Get Started</button>
+            <button class="btn button-primary button-body" onclick="location.href='#stats'">Get Started</button>
         </div>
+        <a role="button" href="#stats"><i class="fas fa-arrow-down arrow"></i></a>
     </header>
-    <div class="container-fluid stats-bar">
-        <div class="stats-wrapper">
-            <ul class="stats-list d-flex justify-content-around">
-                <li><h2>1.1 Million</h2><p>Pounds of coal burned  <br/>per year</p></li>
-                <li><h2>1.46 Million</h2><p>kWh electricity <br/>per year</p></li>
-                <li><h2>1.034 Million</h2><p>Kg of CO<sub>2</sub> emitted<br/><span style="font-size: 0.6em">or CO<sub>2</sub> Equivalent*</span></p></li>
-            </ul>
+
+    <div id="stats" style="padding: 2em 0;">
+        <div class="container-fluid stats-bar">
+            <div class="stats-wrapper">
+                <ul class="stats-list d-flex justify-content-around">
+                    <li><h2>1.1 Million</h2><p>Pounds of coal burned  <br/>per year</p></li>
+                    <li class="separator-element"><h2>1.46 Million</h2><p>kWh electricity <br/>per year</p></li>
+                    <li><h2>1.034 Million</h2><p>Kg of CO<sub>2</sub> emitted<br/><span style="font-size: 0.6em">or CO<sub>2</sub> Equivalent*</span></p></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="mission" class="container-fluid">
@@ -108,7 +112,12 @@
         </div>
     </div>
     
-    <footer class="footer"></footer>
+    <footer class="footer d-flex justify-content-center">
+        <div class="nav-wrap">
+            <a class="navbar-brand brand"><b>Inbox Neutral <i class="far fa-copyright" aria-hidden="true"></i> 2021</b> </a>
+            
+        </div>
+    </footer>
 
     
 
