@@ -1,9 +1,11 @@
-$(window).resize(function() {
-    if (window.matchMedia("(max-width: 768px)").matches) {
+function detectMediaSize(mediaQueryList) {
+    if (mediaQueryList.matches) {
         $("#navbarContentList").addClass("flex-column");
-    } 
-
-    if (window.matchMedia("(min-width: 769px)").matches) {
+    } else {
         $("#navbarContentList").removeClass("flex-column");
     }
-});
+}
+
+var maxWidthMatch = window.matchMedia("(max-width: 768px)");
+maxWidthMatch.addListener(detectMediaSize);
+window.onload = detectMediaSize(maxWidthMatch);
