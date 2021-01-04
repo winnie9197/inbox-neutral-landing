@@ -215,7 +215,7 @@ p {
 /* Quote */
 
 .quote {
-    background-color: white; 
+    background-color: #FCFCFC; 
     box-shadow: 0 4px 4px var(--shadow-green); 
     margin-top: 4em; padding: 1em;
 }
