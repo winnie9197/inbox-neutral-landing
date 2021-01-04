@@ -249,6 +249,7 @@ p {
     margin: 0 auto 12em auto;
     max-width: 560px;
     color: white;
+    text-align: left;
 }
 
 .reduce-container h3 {
