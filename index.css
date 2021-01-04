@@ -212,6 +212,20 @@ p {
     border-radius: 16px;
 }
 
+/* Quote */
+
+.quote {
+    background-color: white; 
+    box-shadow: 0 4px 4px var(--shadow-green); 
+    margin-top: 4em; padding: 1em;
+}
+
+.quote h3 {
+    font-weight: normal; 
+    margin-bottom: 0; 
+    line-height: 1.5;
+}
+
 /* inbox snapshot component */
 .inbox-snapshot {
     background-color: #ffffff78;
