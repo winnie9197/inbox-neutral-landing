@@ -11,8 +11,6 @@
 html {
     height: 100%;
     overflow: hidden;
-    /* for smooth scrolling, when redirected to different parts of the page via ie: a button */
-    scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +19,11 @@ body {
     font-size: 16px;
     font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
     color: black;
+
     overflow: scroll;
+    /* for smooth scrolling, when redirected to different parts of the page via ie: a button */
+    scroll-behavior: smooth;
+    
 }
 
 h1 {
