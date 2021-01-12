@@ -11,6 +11,8 @@
 html {
     height: 100%;
     overflow: hidden;
+    /* for smooth scrolling, when redirected to different parts of the page via ie: a button */
+    scroll-behavior: smooth;
 }
 
 body {
